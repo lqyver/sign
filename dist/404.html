@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // GitHub Pages SPA 重定向
+        sessionStorage.redirect = location.pathname;
+        location.replace('/');
+    </script>
+</head>
+<body>
+    <noscript>
+        <h1>Page Not Found</h1>
+        <p>Redirecting to <a href="/">home page</a>...</p>
+    </noscript>
+</body>
+</html>
