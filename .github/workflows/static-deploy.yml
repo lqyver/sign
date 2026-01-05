@@ -12,8 +12,12 @@ concurrency:
   cancel-in-progress: false
 
 on:
+  # 在推送到 main 分支时触发
   push:
     branches: [ main ]
+  
+  # 允许从 Actions 页面手动触发
+  workflow_dispatch:
 
 jobs:
   build:
